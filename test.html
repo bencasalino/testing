@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- bootstrap widget theme -->
+    <link rel="stylesheet" href="css/theme.bootstrap.css">
+
+    <script type="text/javascript" src="tablesorter-master/jquery-latest.js"></script>
+    <script type="text/javascript" src="tablesorter-master/jquery.tablesorter.js"></script>
+    <!-- tablesorter plugin -->
+    <!-- <script src="js/jquery.tablesorter.js"></script> -->
+    <!-- tablesorter widget file - loaded after the plugin -->
+    <!-- <script src="js/jquery.tablesorter.widgets.js"></script> -->
+
+    <!-- pager plugin -->
+    <!-- <link rel="stylesheet" href="css/jquery.tablesorter.pager.css">
+    <script src="js/jquery.tablesorter.pager.js"></script> -->
+</head>
+
+<body>
+    <section>
+        <table id="myTable" class="tablesorter">
+<thead>
+<tr>
+    <th>Last Name</th>
+    <th>First Name</th>
+    <th>Email</th>
+    <th>Due</th>
+    <th>Web Site</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>Smith</td>
+    <td>John</td>
+    <td>jsmith@gmail.com</td>
+    <td>$50.00</td>
+    <td>http://www.jsmith.com</td>
+</tr>
+<tr>
+    <td>Bach</td>
+    <td>Frank</td>
+    <td>fbach@yahoo.com</td>
+    <td>$50.00</td>
+    <td>http://www.frank.com</td>
+</tr>
+<tr>
+    <td>Doe</td>
+    <td>Jason</td>
+    <td>jdoe@hotmail.com</td>
+    <td>$100.00</td>
+    <td>http://www.jdoe.com</td>
+</tr>
+<tr>
+    <td>Conway</td>
+    <td>Tim</td>
+    <td>tconway@earthlink.net</td>
+    <td>$50.00</td>
+    <td>http://www.timconway.com</td>
+</tr>
+</tbody>
+</table>
+
+    </section>
+
+    <script>
+
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter( {sortList: [[0,0], [1,0]]} );
+    }
+);
+</script>
+</body>
+
+</html>
